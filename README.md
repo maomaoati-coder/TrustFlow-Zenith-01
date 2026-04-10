@@ -104,5 +104,7 @@ Case C: Collision Protection
 
 ​"We do not write code to hope. We write code to be certain."
 ​
+
 Kernel Version: 1.0.0
+
 License: MIT
