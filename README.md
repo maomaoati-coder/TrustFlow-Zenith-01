@@ -48,6 +48,7 @@ EOF
 python z01_core.py
 
 
+![Deployment_Proof](docs/images/1000004066.png)
 
 🧪 Visual Evidence of Sovereignty
 
@@ -55,15 +56,18 @@ python z01_core.py
 
 ​Case A: Deterministic Trigger
 ​
+![Cause_Effect_Proof](docs/images/1000004067.png)
 Inputting the fingerprint DA immediately collapses the logic into a pre-determined, secured state.
 !
 
 ​Case B: Anti-Noise Resilience
 
+![Anti_Noise_Proof](docs/images/1000004068.png)
 ​Even with significant environmental interference following the fingerprint (DA_SIGNAL_LOST_99), the logic remains locked. The outcome is predestined at the first two characters.!
 
 Case C: Collision Protection
 
+![Ambiguity_Rejection_Proof](docs/images/1000004069.png)
 ​Undefined or ambiguous inputs (XZ) are rejected immediately, preventing any "guessing" or insecure states.
 !
 
