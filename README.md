@@ -18,16 +18,20 @@
 
 ​Execute the following to initialize the Zenith-01 Core:
 
+### 1. Deploy the Zenith-01 Core
+Run this single block in your terminal to create and initialize the core:
+
+```bash
 cat << 'EOF' > z01_core.py
 import sys
 
 class Zenith_Core:
     def __init__(self):
-        # Universal Logic Slots (The 0-1 Fabric)
         self.SLOTS = {
             "DA": "[LOCKED: DANGER] -> EXEC: PHYSICAL_ISOLATION + SHIELD_ACTIVE",
             "AL": "[LOCKED: ALIVE]  -> EXEC: SYNC_OSCILLATOR + STEADY_STATE",
-            "SA": "[LOCKED: SAFE]   -> EXEC: RESTORE_RX + LOW_POWER"
+            "SA": "[LOCKED: SAFE]   -> EXEC: RESTORE_RX + LOW_POWER",
+            "ST": "[LOCKED: STOP]   -> EXEC: PERSIST_STATE + HALT_CLOCK"
         }
 
     def run(self):
@@ -37,7 +41,6 @@ class Zenith_Core:
             try:
                 raw = input("\n[TRIGGER] >> ").strip().upper()
                 if len(raw) < 2: continue
-                # Logic collapse based on 2-char sovereignty
                 print(f"OUTPUT: {self.SLOTS.get(raw[:2], 'LOGIC_CONFLICT')}")
             except EOFError: break
 
@@ -46,6 +49,8 @@ if __name__ == "__main__":
 EOF
 
 python z01_core.py
+
+```
 
 
 ![Deployment_Proof](docs/images/1000004066.png)
