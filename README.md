@@ -4,6 +4,24 @@
 
 ​"The beginning dictates the end. Precision is not an option; it is a physical law."
 
+🛡️ Contribution Protocol: The Gatekeeper
+
+​This repository is a Deterministic Sovereign Zone. We do not accept "trial-and-error" code.
+
+​Before submitting a Pull Request (PR), you MUST run the Gatekeeper: python gatekeeper.py
+
+Your code must align with one of the four Architectural Decisions:
+
+MO: Is your module isolated?
+
+​DT: Is your data centralized in a topology?
+
+​FL: Is your flow linear and locked?
+
+​EP: Is your entry point singular?
+
+​If your logic results in REJECT, do not open a PR. Fix the architecture first.
+
 ​🌌 The Zenith Manifesto: Origin Determinism
 
 ​Traditional programming is often a fragile process of "guessing and patching." Developers write complex, linear code, hoping it avoids logic drifts and unhandled exceptions.
